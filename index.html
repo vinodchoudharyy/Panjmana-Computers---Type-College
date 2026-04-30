@@ -506,49 +506,147 @@
   </section>
   
 <style>
-    @media (max-width: 600px) {
-      .hero-logo {
-        width: 200px !important;
-        height: 200px !important;
+    /* 📱 MOBILE RESPONSIVE - 768px breakpoint */
+    @media (max-width: 768px) {
+      body {
+        padding: 0;
+        overflow-x: hidden;
       }
-      .hero h1 {
-        font-size: 1.8rem !important;
-      }
-      .hero p {
-        font-size: 1rem !important;
+      
+      /* Header */
+      header {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 10px 15px !important;
       }
       .header-container {
         flex-direction: column !important;
-        text-align: center !important;
+        gap: 15px !important;
+      }
+      .logo {
+        flex-direction: column !important;
+        gap: 10px !important;
+      }
+      .logo img {
+        height: 45px !important;
+      }
+      .logo h2 {
+        font-size: 1.3rem !important;
       }
       nav ul {
-        gap: 10px !important;
-        font-size: 0.9rem !important;
+        gap: 15px !important;
+        padding: 0 !important;
       }
+      nav a {
+        font-size: 1rem !important;
+        padding: 5px 10px !important;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 60px 15px 40px !important;
+      }
+      .hero h1 {
+        font-size: 1.8rem !important;
+        line-height: 1.3 !important;
+      }
+      .hero p {
+        font-size: 0.95rem !important;
+      }
+      .hero-logo {
+        width: 180px !important;
+        height: 180px !important;
+        opacity: 0.5 !important;
+      }
+
+      /* About Section */
+      #about p {
+        font-size: 0.95rem !important;
+        padding: 0 10px !important;
+      }
+      section h2 {
+        font-size: 1.8rem !important;
+      }
+
+      /* Course Cards - Single Column */
       .grid {
         grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 15px !important;
       }
       .card {
+        width: 100% !important;
         padding: 15px !important;
       }
+      .card h3 {
+        font-size: 1.3rem !important;
+      }
+      .card p {
+        font-size: 0.95rem !important;
+      }
+      .card button {
+        width: 100% !important;
+        font-size: 0.95rem !important;
+        padding: 10px !important;
+      }
+
+      /* Contact Form */
+      #contact {
+        padding: 20px 15px !important;
+      }
+      #contact > div {
+        max-width: 100% !important;
+        padding: 20px 15px !important;
+      }
+      #contact input,
+      #contact select,
+      #contact textarea {
+        font-size: 14px !important;
+      }
+
+      /* Footer */
       .footer-container {
         flex-direction: column !important;
         text-align: center !important;
+        gap: 25px !important;
+      }
+      .footer h2 {
+        font-size: 1.1rem !important;
+      }
+
+      /* Floating Icons */
+      .floating-icons {
+        bottom: 15px !important;
+        left: 10px !important;
+        gap: 10px !important;
+      }
+      .icon {
+        width: 40px !important;
+        height: 40px !important;
+      }
+      .icon img {
+        width: 20px !important;
+        height: 20px !important;
       }
     }
+
+    /* Extra Small Phones - 400px */
     @media (max-width: 400px) {
       .hero-logo {
-        width: 150px !important;
-        height: 150px !important;
+        width: 140px !important;
+        height: 140px !important;
       }
       .hero h1 {
         font-size: 1.4rem !important;
       }
       .logo img {
-        height: 40px !important;
+        height: 35px !important;
       }
       .logo h2 {
-        font-size: 1.2rem !important;
+        font-size: 1rem !important;
+      }
+      section h2 {
+        font-size: 1.5rem !important;
       }
     }
   </style>
