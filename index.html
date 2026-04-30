@@ -513,33 +513,36 @@
         overflow-x: hidden;
       }
       
-      /* Header */
+/* Header - Single Line on Mobile */
       header {
-        flex-direction: column !important;
-        text-align: center !important;
-        padding: 10px 15px !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 8px 12px !important;
       }
       .header-container {
-        flex-direction: column !important;
-        gap: 15px !important;
+        flex-direction: row !important;
+        gap: 8px !important;
+        width: 100% !important;
+        justify-content: space-between !important;
       }
-      .logo {
-        flex-direction: column !important;
-        gap: 10px !important;
+.logo {
+        flex-direction: row !important;
+        gap: 8px !important;
       }
       .logo img {
-        height: 45px !important;
+        height: 35px !important;
       }
       .logo h2 {
-        font-size: 1.3rem !important;
+        font-size: 0.85rem !important;
+        display: inline !important;
       }
       nav ul {
-        gap: 15px !important;
+        gap: 8px !important;
         padding: 0 !important;
       }
       nav a {
-        font-size: 1rem !important;
-        padding: 5px 10px !important;
+        font-size: 0.7rem !important;
+        padding: 3px 6px !important;
       }
 
       /* Hero Section */
