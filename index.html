@@ -498,12 +498,36 @@
 
 <!-- Hero -->
   <section class="hero" role="banner" aria-label="Welcome Message" style="position:relative; overflow:hidden;">
-    <img src="logo (2).png" alt="Logo" style="width:350px; height:350px; border-radius:50%; opacity:0.7; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) scale(1.2); z-index:0; filter:brightness(1.1) contrast(0.95) blur(1px);" />
+    <img src="logo (2).png" alt="Logo" style="width:350px; height:350px; border-radius:50%; opacity:0.7; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%) scale(1.2); z-index:0; filter:brightness(1.1) contrast(0.95) blur(1px);" class="hero-logo" />
     <div style="position:relative; z-index:1;">
       <h1>welcome to Panjmana Computers & Type College</h1>
       <p>An Institute rising as a sun</p>
     </div>
   </section>
+  
+  <style>
+    @media (max-width: 600px) {
+      .hero-logo {
+        width: 200px !important;
+        height: 200px !important;
+      }
+      .hero h1 {
+        font-size: 1.8rem !important;
+      }
+      .hero p {
+        font-size: 1rem !important;
+      }
+    }
+    @media (max-width: 400px) {
+      .hero-logo {
+        width: 150px !important;
+        height: 150px !important;
+      }
+      .hero h1 {
+        font-size: 1.4rem !important;
+      }
+    }
+  </style>
 
   <!-- About -->
   <section id="about" class="container" aria-labelledby="about-heading">
