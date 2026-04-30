@@ -505,7 +505,7 @@
     </div>
   </section>
   
-  <style>
+<style>
     @media (max-width: 600px) {
       .hero-logo {
         width: 200px !important;
@@ -517,6 +517,24 @@
       .hero p {
         font-size: 1rem !important;
       }
+      .header-container {
+        flex-direction: column !important;
+        text-align: center !important;
+      }
+      nav ul {
+        gap: 10px !important;
+        font-size: 0.9rem !important;
+      }
+      .grid {
+        grid-template-columns: 1fr !important;
+      }
+      .card {
+        padding: 15px !important;
+      }
+      .footer-container {
+        flex-direction: column !important;
+        text-align: center !important;
+      }
     }
     @media (max-width: 400px) {
       .hero-logo {
@@ -525,6 +543,12 @@
       }
       .hero h1 {
         font-size: 1.4rem !important;
+      }
+      .logo img {
+        height: 40px !important;
+      }
+      .logo h2 {
+        font-size: 1.2rem !important;
       }
     }
   </style>
